@@ -1,0 +1,33 @@
+.about{
+    padding: 2px;
+    margin: 0;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+.group{
+    text-align: center;
+}
+.aboutus{
+    display: flex;
+}
+.group1{
+    background: #606060FF ;
+    width: 70%;
+    padding: 15px;
+    margin-left: 30px;
+    border-radius: 5px;
+    /* display: inline; */
+}
+.group2{
+    /* height: 200px;
+    margin-left: 900px; */
+    background-color: black;
+    /* width: 100px; */
+    height: 220px;
+    width: 220px;
+    /* display: inline; */
+    border-radius: 5px;
+    margin-left: 80px;
+}

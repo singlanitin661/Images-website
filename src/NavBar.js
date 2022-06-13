@@ -14,7 +14,7 @@ function NavBar() {
             <i className="fas fa-code"></i>
           </span>
 
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <ul className={click ? "nav-menu active" : "nav-menu"} style={{cursor:"pointer"}}>
             <li className="nav-item">
               <span
                 activeClassName="active"

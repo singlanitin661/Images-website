@@ -1,0 +1,25 @@
+{
+    "status": "ok",
+    "totalResults": 2, 
+    "articles": [
+    {
+    "source": {
+                "id": null,
+                "name": "farewell"},
+            "title":"ADIOS - FAREWELL 2022",
+            "description": "It’s time to say goodbye to the past and hello to a new journey lying ahead",
+            "publishedAt": "2022-06-13",
+            "content": "ADIOS, The farewell was organised for our lovely senior members, who left their wonderful memories behind and started a new journey, full of different adventures..."
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "recruitment"},
+            "title": "EB - TRANSFER",
+            "description": "If you are brave enough to say goodbye, life will reward you with a new hello.",
+            "urlToImage": "image/2.jpg",
+            "publishedAt": "2022-06-13",
+            "content": "EB Transfer is the day when we say goodbye to our old EB and welcome our new Executive Body full of enthusiasm and enthralling ideas. This formal event took place on the 4th of May, 2022...."
+        }
+       ]
+}

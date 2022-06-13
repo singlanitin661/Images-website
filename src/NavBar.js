@@ -39,7 +39,16 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Event
+                Events
+              </span>
+            </li>
+            <li className="nav-item">
+              <span
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Members
               </span>
             </li>
             <li className="nav-item">

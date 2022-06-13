@@ -1,6 +1,6 @@
 .navbar {
-    background-color: black;
-    height: 50px;
+    background: transparent;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@
     position: sticky;
     top: 0;
     z-index: 20;
-    margin: 0;
+    margin: -35px;
   }
   
   .nav-container {
@@ -23,12 +23,13 @@
   .nav-logo {
     color: white;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 60px;
+    margin-top: -20px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
     flex-grow: 1;
-    font-weight: 400;
+    font-weight: 450;
   }
   
   .nav-menu {

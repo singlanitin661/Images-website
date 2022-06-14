@@ -1,13 +1,13 @@
 .about{
-    padding: 2px;
+    padding: 4px;
     margin: 0;
     background-color: grey;
     align-items: center;
     justify-content: center;
-    height: 300px;
 }
 .group{
     text-align: center;
+    padding: 2px;
 }
 .aboutus{
     display: flex;

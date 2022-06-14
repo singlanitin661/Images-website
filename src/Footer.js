@@ -21,7 +21,7 @@ function Footer() {
             <a href="#">Contact</a>
           </p>
 
-          <p className="footer-company-name">IMAGES © 2022</p>
+          <p className="footer-company-name">EXPLORE-IMAGES © 2022</p>
         </div>
 
         <div className="footer-center">

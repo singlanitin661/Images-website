@@ -9,13 +9,13 @@ function Carousel() {
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner  size">
           <div className="carousel-item active">
-            <img src={myImage1} className="d-block h-10 w-100 img" style={{maxHeight:'500px'}} alt="slide 1" />
+            <img src={myImage1} className="d-block h-10 w-100 img" style={{height:'500px'}} alt="slide 1" />
           </div>
           <div className="carousel-item  size">
-            <img src={myImage2} className="d-block h-10 w-100 img" style={{maxHeight:'500px'}} alt="slide 2" />
+            <img src={myImage2} className="d-block h-10 w-100 img" style={{height:'500px'}} alt="slide 2" />
           </div>
           <div className="carousel-item  size">
-            <img src={myImage3} className="d-block h-10 w-100 img" style={{maxHeight:'500px'}} alt="slide 3" />
+            <img src={myImage3} className="d-block h-10 w-100 img" style={{height:'500px'}} alt="slide 3" />
           </div>
         </div>
       </div>

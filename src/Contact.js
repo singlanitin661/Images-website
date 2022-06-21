@@ -1,30 +1,10 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import { Button, Form } from "semantic-ui-react";
 import insta from "./insta.png";
-import axios from "axios";
 import facebook from "./facebook.png";
 import linkedin from "./linkedin.png";
 import youtube from "./youtube.png";
 function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const objt = { name, email, message };
-
-    axios
-      .post(
-        "https://sheet.best/api/sheets/1acbb062-17e9-4889-9af3-680b51fb1a6e",
-        objt
-      )
-      .then((response) => {
-        console.log(response);
-      });
-  };
   return (
     <div>
       <section className="contact_us">
@@ -38,57 +18,24 @@ function Contact() {
                       <div className="contact_field">
                         <h3>Contact Us</h3>
                         <p>
-                          Feel Free to contact us for your queries or Just say
+                          Feel free to contact us for your queries or Just say
                           Hello😃
                         </p>
-                        <Form className="form">
-                          <Form.Field>
-                            <label>Name</label>
-                            <input
-                              placeholder="Enter your Name"
-                              onChange={(e) => setName(e.target.value)}
-                            />
-                          </Form.Field>
-                          <Form.Field>
-                            <label>Age</label>
-                            <input
-                              placeholder="Enter your Email"
-                              onChange={(e) => setEmail(e.target.value)}
-                            />
-                          </Form.Field>
-                          <Form.Field>
-                            <label>Salary</label>
-                            <input
-                              placeholder="Enter your Message"
-                              onChange={(e) => setMessage(e.target.value)}
-                            />
-                          </Form.Field>
-                          <Button
-                            color="blue"
-                            type="submit"
-                            onClick={handleSubmit}
-                          >
-                            Submit
-                          </Button>
-                        </Form>
-                        {/* <input
+                        <input
                           type="text"
                           className="form-control form-group"
                           placeholder="Name"
-						onChange={(e) => setName(e.target.value)}
                         />
                         <input
                           type="text"
                           className="form-control form-group"
                           placeholder="Email"
-						onChange={(e) => setEmail(e.target.value)}
                         />
                         <textarea
                           className="form-control form-group"
                           placeholder="Message"
-                          onChange={(e) => setMessage(e.target.value)}
                         ></textarea>
-                        <button className="contact_form_submit">Send</button> */}
+                        <button className="contact_form_submit">Send</button>
                       </div>
                     </div>
                   </div>

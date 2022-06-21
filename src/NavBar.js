@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-
+import './GlobalVariable'
 function NavBar() {
   const [click, setClick] = useState(false);
 

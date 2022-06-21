@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 export class CardItem extends Component {
   render() {
     let { title, description ,imageUrl , source , date} = this.props;

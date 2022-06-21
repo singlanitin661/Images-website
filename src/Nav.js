@@ -1,5 +1,6 @@
 import React from "react";
 import image from './images.png'
+import './GlobalVariable'
 function Nav() {
   return (
     <div >
@@ -45,32 +46,34 @@ function Nav() {
                 </a>
                 <ul className="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown" style={{border:"none"}}>
                   <li>
-                    <a className="dropdown-item text-white" href="#">
+                    <a className="dropdown-item text-white" href="#" onClick={global.tag="recruitment"}>
                     Recruitment
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item text-white" href="#">
+                    <a className="dropdown-item text-white" href="#" onClick={global.tag="workshop"}>
                       Workshops
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item text-white" href="#">
+                    <a className="dropdown-item text-white" href="#" onClick={global.tag="GBM"}>
                       GBM
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item text-white" href="#">
+                    <a className="dropdown-item text-white" href="#" onClick={global.tag="farewell"}>
                       Farewell
                     </a>
                   </li>
                 </ul>
               </li>
+              <Link to="/members">
               <li className="nav-item">
                 <a className="nav-link text-white" aria-current="page" href="#">
                 Members
                 </a>
               </li>
+              </Link>
               <li className="nav-item">
                 <a className="nav-link text-white" aria-current="page" href="#">
                 Contact Us

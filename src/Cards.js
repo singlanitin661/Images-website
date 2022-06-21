@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CardItem from "./CardItem";
+import './GlobalVariable';
 import PropTypes from 'prop-types';
 
 export class Cards extends Component {
@@ -132,8 +133,8 @@ export class Cards extends Component {
     }
   ];
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       articles: this.articles,
       loading: false,

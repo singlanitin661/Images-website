@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Papa from "papaparse";
 import "./Members.css";
-const MovieData = () => {
+const Members = () => {
   const [data, setData] = useState({});
   Papa.parse(
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vRu37q17dyDB4lHh4ROwI8RAVuZ256IkAvoOefeEf9FLM5kpUNTyvZmxuT0nJS_tZtWQog9HgtIRHHw/pub?gid=0&single=true&output=csv",
@@ -106,4 +106,4 @@ const MovieData = () => {
     </div>
   );
 };
-export default MovieData;
+export default Members;

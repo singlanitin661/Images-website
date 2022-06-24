@@ -6,7 +6,6 @@ import Carousel from "./Components/Navbar/Carousel";
 import Cards from "./Cards";
 import Footer from "./Components/Footer/Footer";
 import About from "./Components/About/About";
-import Cards from "./Cards";
 import Contact from "./Components/Contact/Contact";
 import Members from "./Components/Member/Members";
 

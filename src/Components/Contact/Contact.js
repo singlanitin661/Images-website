@@ -46,13 +46,13 @@ function Contact() {
                 </div>
                 <div className="contact_info_sec">
                   <h4>Contact Info</h4>
-                  <div className="d-flex info_single align-items-center">
+                  <div className="d-flex info_single align-items-left">
                     <span>+91 8009 054294</span>
                   </div>
-                  <div className="d-flex info_single align-items-center">
+                  <div className="d-flex info_single align-items-left">
                     <span>images.desk@gmail.com</span>
                   </div>
-                  <div className="info_single align-items-center">
+                  <div className="info_single_name ">
                     <span>Registered under chandigarh administration.</span>
                     <div style={{ padding: "7px", display: "flex" }}>
                       <a href="https://www.facebook.com/imagesonnet/">

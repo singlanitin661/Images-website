@@ -66,9 +66,9 @@
 } */
 
 .info_single {
-  margin: 10px 0px;
+  margin-left: 20px 1px;
 }
-.info_single i {
+.info_single_name {
   margin-right: 15px;
 }
 /* .info_single span {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import image from '../Images/images.png'
+import "./Nav.css"
 function Nav() {
   return (
     <div>
@@ -71,14 +72,14 @@ function Nav() {
                   </li>
                 </ul>
               </li>
-              <Link to="members">
+              <Link to="/members">
               <li className="nav-item">
                 <a className="nav-link text-white" aria-current="page" href="#">
                 Members
                 </a>
               </li>
               </Link>
-              <Link to="contact">
+              <Link to="/contact">
               <li className="nav-item">
                 <a className="nav-link text-white" aria-current="page" href="#">
                 Contact Us

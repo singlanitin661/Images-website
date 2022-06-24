@@ -49,12 +49,11 @@ const Members = () => {
                           </h5>
                           <p
                             className=" text-capitalize text-muted small blockquote-footer "
-                            style={{ paddingTop: "7px" }}
+                            style={{ paddingTop: "7px",marginRight: "200px" }}
                           >
-                            {" "}
                             {data.branch} {"("}
                             {data.year}
-                            {")"}{" "}
+                            {")"}
                           </p>
                         </div>
                       </div>
@@ -90,12 +89,11 @@ const Members = () => {
                           </h5>
                           <p
                             className=" text-capitalize text-muted small blockquote-footer "
-                            style={{ paddingTop: "7px" }}
+                            style={{ paddingTop: "7px",marginRight: "200px" }}
                           >
-                            {" "}
                             {data.branch} {"("}
                             {data.year}
-                            {")"}{" "}
+                            {")"}
                           </p>
                         </div>
                       </div>

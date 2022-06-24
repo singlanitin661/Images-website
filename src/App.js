@@ -5,6 +5,7 @@ import Nav from "./Components/Navbar/Nav";
 import Carousel from "./Components/Navbar/Carousel";
 import Footer from "./Components/Footer/Footer";
 import About from "./Components/About/About";
+import Cards from "./Cards";
 import Contact from "./Components/Contact/Contact";
 import Members from "./Components/Member/Members";
 
@@ -13,7 +14,7 @@ function App() {
       <Router>
         <div className="App">
           <Routes>
-          <Route exact path="/" element={<div> <Nav /><Carousel /><About/><Footer/> </div>}/>
+          <Route exact path="/" element={<div> <Nav /><Carousel /><Cards/><About/><Footer/> </div>}/>
           <Route exact path="/contact" element={<div> <Nav /><Contact/> </div>}/>
           <Route exact path="/members" element={<div> <Nav /><Members/> </div>}/>
           </Routes>

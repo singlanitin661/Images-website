@@ -1,41 +1,24 @@
+import React from "react";
 import "./App.css";
-import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from "./NavBar";
-import Carousel from "./Carousel";
-import Footer from "./Footer";
-import Cards from "./Cards";
-import About from "./About";
-import Contact from "./Contact";
-import Members from "./Members";
+import Nav from "./Components/Navbar/Nav";
+import Carousel from "./Components/Navbar/Carousel";
+import Footer from "./Components/Footer/Footer";
+import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
+import Members from "./Components/Member/Members";
+
 function App() {
   return (
-    // <div>
-    //    <MovieData/>
-    //  </div>
-    // <div  style={{width:"100%",padding:"0",margin:"0"}}>
-    //   {/* <div>
-    //   <Nav/>
-    //   </div> */}
-    // <Contact/>
-    // <MapSection location={location} zoomLevel={17} />
-    //   {/* <Form/> */}
-    // <Router>  
-    //     <Routes>
-    //     <Route exact path="/" element={<div> <NavBar /><Carousel /><Cards/><About/><Footer/> </div>}/>
-    //     <Route exact path="/members" element={<Members/>} />
-    //     <Route exact path="/contact" element={<Contact/>} />
-    //     </Routes>
-    // </Router>
-    // <div><NavBar /><Carousel /><Cards/><About/><Footer/></div>
-    <Router>
-      <Routes>
-        <Route path="/" element={<div> <NavBar /><Carousel /><Cards/><About/><Footer/> </div>}>
-          <Route path="/members" element={<Members />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </Router>
+      <Router>
+        <div className="App">
+          <Routes>
+          <Route exact path="/" element={<div> <Nav /><Carousel /><About/><Footer/> </div>}/>
+          <Route exact path="/contact" element={<div> <Nav /><Contact/> </div>}/>
+          <Route exact path="/members" element={<div> <Nav /><Members/> </div>}/>
+          </Routes>
+        </div>
+      </Router>
   );
 }
 

@@ -1,10 +1,11 @@
 import React from "react";
-import myImage1 from './1.jpg'
-import myImage2 from './2.jpg'
-import myImage3 from './3.jpg'
+import './Carousel.css'
+import myImage1 from '../Images/1.jpg'
+import myImage2 from '../Images/2.jpg'
+import myImage3 from '../Images/3.jpg'
 function Carousel() {
   return (
-    <div>
+    <div className="root">
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner  size">
           <div className="carousel-item active">

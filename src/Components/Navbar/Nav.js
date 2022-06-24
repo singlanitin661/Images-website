@@ -1,15 +1,17 @@
 import React from "react";
-import image from './images.png'
-import './GlobalVariable'
+import { Link } from "react-router-dom";
+import image from '../Images/images.png'
 function Nav() {
   return (
-    <div >
-      <nav className="navbar navbar-expand-lg bg-transparent" style={{paddingLeft:"30px", maxHeight:"60px"}} >
+    <div>
+      <nav className="navbar navbar-expand-lg bg-dark " style={{backgroundColor:"19191b"}} >
         <div className="container-fluid" >
+          <Link to="/">
           <a className="navbar-brand text-white" href="#" style={{fontWeight:"700"}}>
-          <img src={image} alt="" width="30" height="26" class="d-inline-block align-text-top"/>
+          <img src={image} alt="" width="30" height="26" className="d-inline-block align-text-top"/>
              IMAGES 
           </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -21,15 +23,17 @@ function Nav() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav  me-auto mb-2 mb-lg-0 " style={{position:"absolute",right:"30px"}}>
+          <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
+            <ul className="navbar-nav  ">
+              <Link to="/">
               <li className="nav-item">
                 <a className="nav-link text-white" aria-current="page" href="#">
                   Home
                 </a>
               </li>
+              </Link>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <a className="nav-link text-white" href="http://www.exploreimages.org/">
                   Blog
                 </a>
               </li>
@@ -44,41 +48,43 @@ function Nav() {
                 >
                   Events
                 </a>
-                <ul className="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown" style={{border:"none"}}>
+                <ul className="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item text-white" href="#" onClick={global.tag="recruitment"}>
+                    <a className="dropdown-item text-white" href="#">
                     Recruitment
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item text-white" href="#" onClick={global.tag="workshop"}>
+                    <a className="dropdown-item text-white" href="#">
                       Workshops
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item text-white" href="#" onClick={global.tag="GBM"}>
+                    <a className="dropdown-item text-white" href="#">
                       GBM
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item text-white" href="#" onClick={global.tag="farewell"}>
+                    <a className="dropdown-item text-white" href="#">
                       Farewell
                     </a>
                   </li>
                 </ul>
               </li>
-              <Link to="/members">
+              <Link to="members">
               <li className="nav-item">
                 <a className="nav-link text-white" aria-current="page" href="#">
                 Members
                 </a>
               </li>
               </Link>
+              <Link to="contact">
               <li className="nav-item">
                 <a className="nav-link text-white" aria-current="page" href="#">
                 Contact Us
                 </a>
               </li>
+              </Link>
             </ul>
           </div>
         </div>

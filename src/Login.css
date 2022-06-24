@@ -1,4 +1,4 @@
-body{
+.root{
     color:#fff
   }
   .right_conatct_social_icon{
@@ -53,17 +53,13 @@ body{
   
   .contact_info_sec {
       position: absolute;
-      background-color: #2d2d2d;
+      background-color: #19191b;
       right: 1px;
       top: 18%;
       height: 340px;
       width: 340px;
       padding: 40px;
-      border-radius: 25px 0 0 25px;
-  }
-  .contact_info_sec h4{
-      letter-spacing: 1px;
-      padding-bottom: 15px;
+      border-radius: 25px 2px 2px 25px;
   }
   
   .info_single{
@@ -101,18 +97,3 @@ body{
       padding-bottom: 10px;
   }
   
-  .map_sec{
-      padding: 50px 0px;
-  }
-  .map_inner h4, .map_inner p{
-      color: #000;
-      text-align: center
-  }
-  .map_inner p{
-      font-size: 13px;
-  }
-  .map_bind{
-     margin-top: 50px;
-      border-radius: 30px;
-      overflow: hidden;
-  }

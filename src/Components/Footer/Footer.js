@@ -1,10 +1,10 @@
 import React from "react";
 import './Footer.css';
-import image from './images.png'
-import insta from './insta.png'
-import facebook from './facebook.png'
-import linkedin from './linkedin.png'
-import youtube from './youtube.png'
+import image from '../Images/images.png'
+import insta from '../Images/insta.png'
+import facebook from '../Images/facebook.png'
+import linkedin from '../Images/linkedin.png'
+import youtube from '../Images/youtube.png'
 
 function Footer() {
   return (

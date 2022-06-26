@@ -1,17 +1,19 @@
 import React from "react";
 import "./About.css";
-import group from "../Images/group.png";
+import image from "../Images/images.png";
 function About() {
   return (
-    <div>
-      <div className="about">
-        <h1 className="group"> About Us</h1>
-
-        <div className="aboutus">
-          <div className="group1">
-            <p>
-              IMAGES is a non-profit organization, founded in 1991, comprising
-              of students of Punjab Engineering College(Deemed to be
+    <section className="text-center about">
+      <h1>About Us</h1>
+      <div className="container">
+        <div className="row">
+          <div className="sectionleft" data-wow-offset="200">
+            <figure>
+              <img className="right" src={image} alt="" />
+            </figure>
+            <p className="lead left">
+              IMAGES is a non-profit non-profit organization, founded in 1991,
+              comprising of students of Punjab Engineering College(Deemed to be
               University), Chandigarh. Innovative Motivating Artistic Group of
               Engineering Students is what describes us. Our motto is “EXPLORING
               IN YOU...YOU!!” We believe that you are good but we provide you an
@@ -27,13 +29,9 @@ function About() {
               semester.
             </p>
           </div>
-          <div className="group2">
-            <img src={group} style={{ height: "150px", marginTop: "30px" }} />
-          </div>
-          {/* <span></span> */}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

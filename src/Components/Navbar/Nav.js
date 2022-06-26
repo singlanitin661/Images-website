@@ -1,17 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image from '../Images/images.png'
-import "./Nav.css"
+import image from "../Images/images.png";
+import "./Nav.css";
 function Nav() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-dark " style={{backgroundColor:"19191b"}} >
-        <div className="container-fluid" >
+      <nav
+        className="navbar navbar-expand-lg bg-dark "
+        style={{ backgroundColor: "19191b" }}
+      >
+        <div className="container-fluid">
           <Link to="/">
-          <a className="navbar-brand text-white" href="#" style={{fontWeight:"700"}}>
-          <img src={image} alt="" width="30" height="26" className="d-inline-block align-text-top"/>
-             IMAGES 
-          </a>
+            <a
+              className="navbar-brand text-white"
+              href="#"
+              style={{ fontWeight: "700" }}
+            >
+              <img
+                src={image}
+                alt=""
+                width="30"
+                height="26"
+                className="d-inline-block align-text-top"
+              />
+              IMAGES
+            </a>
           </Link>
           <button
             className="navbar-toggler"
@@ -24,17 +37,27 @@ function Nav() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
+          <div
+            className="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
             <ul className="navbar-nav  ">
               <Link to="/">
-              <li className="nav-item">
-                <a className="nav-link text-white" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link text-white"
+                    aria-current="page"
+                    href="#"
+                  >
+                    Home
+                  </a>
+                </li>
               </Link>
               <li className="nav-item">
-                <a className="nav-link text-white" href="http://www.exploreimages.org/">
+                <a
+                  className="nav-link text-white"
+                  href="http://www.exploreimages.org/"
+                >
                   Blog
                 </a>
               </li>
@@ -49,10 +72,14 @@ function Nav() {
                 >
                   Events
                 </a>
-                <ul className="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
+                <ul
+                  className="dropdown-menu "
+                  style={{ backgroundColor: "#19191b" }}
+                  aria-labelledby="navbarDropdown"
+                >
                   <li>
                     <a className="dropdown-item text-white" href="#">
-                    Recruitment
+                      Recruitment
                     </a>
                   </li>
                   <li>
@@ -73,18 +100,26 @@ function Nav() {
                 </ul>
               </li>
               <Link to="/members">
-              <li className="nav-item">
-                <a className="nav-link text-white" aria-current="page" href="#">
-                Members
-                </a>
-              </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link text-white"
+                    aria-current="page"
+                    href="#"
+                  >
+                    Members
+                  </a>
+                </li>
               </Link>
               <Link to="/contact">
-              <li className="nav-item">
-                <a className="nav-link text-white" aria-current="page" href="#">
-                Contact Us
-                </a>
-              </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link text-white"
+                    aria-current="page"
+                    href="#"
+                  >
+                    Contact Us
+                  </a>
+                </li>
               </Link>
             </ul>
           </div>

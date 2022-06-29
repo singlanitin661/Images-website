@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Members from "./Components/Member/Members";
+import Event from "./Events/Event";
 
 function App() {
   const [data, setData] = useState({});
@@ -49,6 +50,15 @@ function App() {
                 {" "}
                 <Nav />
                 <Contact />{" "}
+              </div>
+            }
+          />
+          <Route
+            exact
+            path="/event"
+            element={
+              <div>
+                <Event />
               </div>
             }
           />

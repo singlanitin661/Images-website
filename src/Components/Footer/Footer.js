@@ -25,19 +25,21 @@ function Footer() {
             />
           </h3>
           <p className="footer-links">
-            <span style={{ cursor: "pointer" }}>Home</span>
-            <a href="http://www.exploreimages.org/">Blog</a>
+            <span className="footer_links">Home</span>
+            <span className="footer_links">
+              <a href="http://www.exploreimages.org/">Blog</a>
+            </span>
             <Link to="/">
-              <span>About</span>
+              <span className="footer_links">About</span>
             </Link>
             <Link to="/event">
-              <span>Events</span>
+              <span className="footer_links">Events</span>
             </Link>
             <Link to="/members">
-              <span>Members</span>
+              <span className="footer_links">Members</span>
             </Link>
             <Link to="/contact">
-              <span>Contact</span>
+              <span className="footer_links">Contact</span>
             </Link>
           </p>
 

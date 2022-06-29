@@ -184,7 +184,18 @@
   transform: scale(1.1, 1.1);
   filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #222) sepia(0.3);
 }
+.footer_links {
+  cursor: pointer;
+}
 
+.footer_links:hover {
+  font-size: 16.5px;
+  transform: scale(1.1, 1.1);
+}
+
+.footer_links:active {
+  transform: scale(1.1, 1.1);
+}
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {

@@ -167,6 +167,24 @@
   align-items: center;
   justify-content: center;
 }
+.footer_img {
+  width: 45px;
+  height: 45px;
+  margin-right: 3px;
+  /* filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #0006); */
+  transition: 0.2s;
+  user-select: none;
+}
+
+.footer_img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.footer_img:active {
+  transform: scale(1.1, 1.1);
+  filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #222) sepia(0.3);
+}
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {

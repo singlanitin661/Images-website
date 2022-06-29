@@ -63,9 +63,14 @@ function Footer() {
               Drop us email to share your ideas or just say Hello!😃
             </p>
             <br />
-            <img src={gmail} style={{ height: "23px" }} alt="" />
-            <span>{"  "}</span>
             <a href="mailto:images.desk@gmail.com">
+              <img
+                src={gmail}
+                className="footer_img"
+                style={{ height: "23px", width: "30px", cursor: "pointer" }}
+                alt=""
+              />
+              <span>{"  "}</span>
               {"   "}: images.desk@gmail.com
             </a>
           </div>
@@ -79,16 +84,16 @@ function Footer() {
 
           <div style={{ padding: "7px" }}>
             <a href="https://www.facebook.com/imagesonnet/">
-              <img src={facebook} />
+              <img src={facebook} className="footer_img" />
             </a>
             <a href="https://instagram.com/images_chandigarh?igshid=16blcl5andwr3">
-              <img src={insta} />
+              <img src={insta} className="footer_img" />
             </a>
             <a href="https://www.linkedin.com/company/images.chandigarh/">
-              <img src={linkedin} />
+              <img src={linkedin} className="footer_img" />
             </a>
-            <a>
-              <img src={youtube} />
+            <a href="">
+              <img src={youtube} className="footer_img" />
             </a>
           </div>
         </div>
